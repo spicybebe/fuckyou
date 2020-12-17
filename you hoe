@@ -1,0 +1,10 @@
+git remote add origin https://github.com/spicybebe/fuckyou.git
+git branch -M main
+git push -u origin main
+git clone https://github.com/ottomated/CrewLink.git
+cd CrewLink
+yarn install
+mkdir -p node_modules\iohook\builds\electron-v80-win32-x64\build\Release\
+cp iohook\iohook.node node_modules\iohook\builds\electron-v80-win32-x64\build\Release\
+cp iohook\uiohook.dll node_modules\iohook\builds\electron-v80-win32-x64\build\Release\
+yarn dev
